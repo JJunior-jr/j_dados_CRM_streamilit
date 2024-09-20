@@ -31,7 +31,7 @@ def main():
 
             venda = Vendas(
                 email=email,
-                data=data_hora,
+                data=data_hora_formatada,
                 valor=valor,
                 quantidade=quantidade,
                 produto=produto
