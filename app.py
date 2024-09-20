@@ -26,12 +26,11 @@ def main():
         # contrato(email, data, hora, valor)
         try:
 
-            data_hora = datetime.combine(data, hora)
-            data_hora_formatada = data_hora.strftime("%d/%m/%Y %H:%M:%S")
-
+            data_hora = datetime.strftime.combine(data, hora),"d%/%m/%Y %H:%M:%S"
+            
             venda = Vendas(
                 email=email,
-                data=data_hora_formatada,
+                data=data_hora,
                 valor=valor,
                 quantidade=quantidade,
                 produto=produto
@@ -46,3 +45,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+datetime.
